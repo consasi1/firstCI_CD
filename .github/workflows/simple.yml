@@ -1,0 +1,14 @@
+name: first ci_cd
+
+on: [push]
+
+jobs:
+  runs-shell-command:
+    runs-on: ubuntu-latest
+      steps:
+        - name: echo a String
+          run: echo "welcome to first ci_cd"
+        - name: multiline script
+          run: |
+          node -v
+          npm -v
